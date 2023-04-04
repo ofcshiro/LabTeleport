@@ -20,7 +20,7 @@ CreateThread(function()
                 sleep = 0 
                 inDistance = true
                 if IsControlJustPressed(0, 46) then 
-                    TriggerEvent('codem-notification:Create', 'You have entered the Lab', 'success', 'Laboratory', 5000)
+                    ESX.ShowNotification("You have entered the Lab", "success", 3000)
                     SetEntityCoords(Player, coords.inter)
                 end
             end
@@ -62,7 +62,7 @@ CreateThread(function()
                 sleep = 0 
                 inDistance = true
                 if IsControlJustPressed(0, 46) then 
-                    TriggerEvent('codem-notification:Create', 'You have left the Lab', 'success', 'Laboratory', 5000)
+                    ESX.ShowNotification("You have left the Lab", "success", 3000)
                     SetEntityCoords(Player, coords.enter)
                 end
             end
